@@ -1,4 +1,4 @@
-url = {                          
-    "urlPart1": "#yourUserName-",
-    "urlPart2": "#yourhostname",
+url = {
+    "urlPart1": "xyazze-test-",
+    "urlPart2": ".azerapi.xyz",
 }
