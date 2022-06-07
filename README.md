@@ -34,13 +34,13 @@ Make a file called "urlConfig.py"
 save the file
 open the file with nano or a ide
 
-type the following:
- url = {
-    "urlPart1": "",
-    "urlPart2": "",
- }
-within the parentese write your preferd username(like Azzey-)in the spot 
-after urlPart1  and write your hostname in de parentese after urlPart2 
+do the following:
+type:
+  url = {
+      "urlPart1": "YourUsernameHere -",
+      "urlPart2": "YourHostHere",
+  }
+
 ``` 
  ### usage
  
