@@ -45,11 +45,11 @@ type:
  ### usage
  
  ```
- dev -arg -arg -arg
+ dev -u -p -un
  
  -u --url: provide what you want to be scrambled into a url
- -p --password: provide a number than generates a password
- -un --username: provide a number then generates a username
+ -p --password: generates a password
+ -un --username: generates a username
  -h --help: provides help
  ```
  
