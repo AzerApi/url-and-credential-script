@@ -27,7 +27,7 @@ in a new line type:
   alias dev ='path/to/file/dev.py'
  
  ```
- ##Important
+ ## Important
 ```
 In the same dir as dev.py do the following:
 Make a file called "urlConfig.py"
