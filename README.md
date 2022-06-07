@@ -34,10 +34,9 @@ Make a file called "urlConfig.py"
 save the file
 open the file with nano or a ide
 
-do the following:
-type:
+write the following:
   url = {
-      "urlPart1": "YourUsernameHere -",
+      "urlPart1": "YourUsernameHere-",
       "urlPart2": "YourHostHere",
   }
 
