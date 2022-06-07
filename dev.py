@@ -21,6 +21,7 @@ parser.add_argument(
     default="test",
     help="generate urls",
     type=str,
+    required=True,
 )
 # password argument
 parser.add_argument(
@@ -31,6 +32,7 @@ parser.add_argument(
     type=str,
     nargs="?",
     const="hallo",
+    required=True,
 )
 
 # username argument
@@ -42,6 +44,7 @@ parser.add_argument(
     type=str,
     nargs="?",
     const="hallo",
+    required=True,
 )
 
 
@@ -49,17 +52,17 @@ parser.add_argument(
 def main(args):
 
     if args.url:
-        if args.url == "test":
+        if args.url == " ":
             print("please provide a word")
         else:
             generate_urls(args.url)
         if args.password:
-            if args.password == "test":
+            if args.password == " ":
                 print("please provide a word")
             else:
                 generate_password()
         if args.username:
-            if args.username == "test":
+            if args.username == " ":
                 print("please provide a word")
             else:
                 generate_username()
