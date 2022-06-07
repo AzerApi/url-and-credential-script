@@ -37,7 +37,7 @@ in a new line type:
  -p --password: provide a number than generates a password
  -un --username: provide a number then generates a username
  -h --help: provides help
- ``
+ ```
  
  ### url config file
  ```
