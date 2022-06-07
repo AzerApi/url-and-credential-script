@@ -1,10 +1,8 @@
 #! usr/bin/env/python3
 # name: Dev tools py script
 # author: @Azzey
-# date: 2020-04-10
+# date: 2022-06-7
 # version: 1.0
-# description: This script is a tool to help you with development
-# --help: use 1 or 2
 
 import string
 import time
