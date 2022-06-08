@@ -14,7 +14,7 @@ scrambles a word to provide 5 unique urls
 nano ~/.zshrc
 
 in a new line type:
-  alias dev ='path/to/file/dev.py'
+  alias dev ='python 3path/to/file/dev.py'
  
  ```
  
@@ -24,9 +24,14 @@ in a new line type:
  nano ~/.bash_profile
  
  in a new line type:
-  alias dev ='path/to/file/dev.py'
+  alias dev ='python3 path/to/file/dev.py'
  
  ```
+ 
+ ## using python3
+```
+python3 path/to/file/dev.py
+```
  ## Important
 ```
 In the same dir as dev.py do the following:
