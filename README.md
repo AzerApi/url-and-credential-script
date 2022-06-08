@@ -25,7 +25,7 @@ scrambles a word to provide 5 unique urls
  nano ~/.zshrc
 
  in a new line type:
-   alias dev ='python 3path/to/file/dev.py'
+   alias dev ='python3 path/to/file/dev.py'
 
   ```
  
