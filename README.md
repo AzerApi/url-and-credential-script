@@ -43,6 +43,21 @@ in a new line type:
 ```
 python3 path/to/file/dev.py
 ```
+### using powershell
+#### create a profile(if you don't have one already
+```
+New-Item -Type file -Force $profile
+```
+#### open the file using vs code
+```
+code $profile
+```
+#### in the profile file copy the following
+```
+Set-Alias dev "python3 $HOME\path\to\dev.py"
+```
+
+
  ## Important
 ```
 copy the following to a file called urlConfig.py
