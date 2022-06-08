@@ -7,7 +7,7 @@ a url and credentials generation script made with vs code and github copilot
 scrambles a word to provide 5 unique urls
 
 
- ### usage
+ ## usage
  
  ```
  dev -u -p -un
@@ -39,7 +39,7 @@ in a new line type:
  
  ```
  
- ## using python3
+ ### using python3
 ```
 python3 path/to/file/dev.py
 ```
@@ -57,7 +57,7 @@ copy the following to a file called urlConfig.py
 
 
 ``` 
- ### url config file
+ ## url config file
  ```
  to use the generator you need to have the urlConfig.py file in your directory with the dev.py script
  
