@@ -64,12 +64,10 @@ rename the py.urlConfig.py  file to urlConfig.py
 
 replace YourUserName with your preferd username plus a -
 replace YourHostName with your host
+
+save it to the same file location as the dev.py script
   
 ``` 
- ## url config file
- ```
- to use the generator you need to have the urlConfig.py file in your directory with the dev.py script
- 
- ```
+
 
 
