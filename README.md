@@ -60,17 +60,11 @@ Set-Alias dev "python3 $HOME\path\to\dev.py"
 
  ## Important
 ```
-copy the following to a file called urlConfig.py
-  url = {
-      "urlPart1": "YourUsernameHere-",
-      "urlPart2": "YourHostHere",
-  }
-  
-  replace YourUserNamehere with the username you want plus a -
-  replace yourhosthere with your host
-  
+rename the .urlconfigpy file to urlConfig.py
 
-
+replace YourUserName with your preferd username plus a -
+replace YourHostName with your host
+  
 ``` 
  ## url config file
  ```
