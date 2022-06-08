@@ -7,6 +7,17 @@ a url and credentials generation script made with vs code and github copilot
 scrambles a word to provide 5 unique urls
 
 
+ ### usage
+ 
+ ```
+ dev -u -p -un
+ 
+ -u --url: provide what you want to be scrambled into a url
+ -p --password: generates a password
+ -un --username: generates a username
+ -h --help: provides help
+ ```
+ 
 ## setup
 
 ### using z shell:
@@ -34,31 +45,22 @@ python3 path/to/file/dev.py
 ```
  ## Important
 ```
-In the same dir as dev.py do the following:
-Make a file called "urlConfig.py"
-save the file
-open the file with nano or a ide
-
-write the following:
+copy the following to a file called urlConfig.py
   url = {
       "urlPart1": "YourUsernameHere-",
       "urlPart2": "YourHostHere",
   }
+  
+  replace YourUserNamehere with the username you want plus a -
+  replace yourhosthere with your host
+  
+
 
 ``` 
- ### usage
- 
- ```
- dev -u -p -un
- 
- -u --url: provide what you want to be scrambled into a url
- -p --password: generates a password
- -un --username: generates a username
- -h --help: provides help
- ```
- 
  ### url config file
  ```
  to use the generator you need to have the urlConfig.py file in your directory with the dev.py script
  
  ```
+
+
