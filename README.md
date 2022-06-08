@@ -1,4 +1,4 @@
-# url-and-credential-script
+# url-and-credential-generator-script
 
 
 
