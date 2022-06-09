@@ -44,7 +44,7 @@ scrambles a word to provide 5 unique urls
  python3 path/to/file/dev.py
  ```
  ### using powershell:
- #### create a profile(if you don't have one already
+ #### create a profile(if you don't have one already)
  ```
  New-Item -Type file -Force $profile
  ```
