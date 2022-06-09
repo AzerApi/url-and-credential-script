@@ -39,11 +39,11 @@ scrambles a word to provide 5 unique urls
 
   ```
  
-  ### using python3
+  ### using python3:
  ```
  python3 path/to/file/dev.py
  ```
- ### using powershell
+ ### using powershell:
  #### create a profile(if you don't have one already
  ```
  New-Item -Type file -Force $profile
