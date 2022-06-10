@@ -4,6 +4,7 @@
 # date: 2022-06-7
 # version: 1.0
 
+
 import string
 import time
 import os
@@ -11,10 +12,12 @@ import urlConfig as cfg
 import random
 import argparse
 
+
+#call parser
 parser = argparse.ArgumentParser()
 
 
-# url argument
+# add url argument
 parser.add_argument(
     "--url",
     "-u",
@@ -23,7 +26,7 @@ parser.add_argument(
     type=str,
     required=True,
 )
-# password argument
+# add password argument
 parser.add_argument(
     "--password",
     "-p",
@@ -35,7 +38,7 @@ parser.add_argument(
     required=True,
 )
 
-# username argument
+# add username argument
 parser.add_argument(
     "--username",
     "-un",
@@ -47,10 +50,10 @@ parser.add_argument(
     required=True,
 )
 
-
 # main function with args passed in
 def main(args):
 
+    #if statement tree to call functions based on args passed in 
     if args.url:
         if args.url == " ":
             print("please provide a word")
@@ -92,8 +95,7 @@ def generate_urls(args):
     for word in list:
         print(f"{urlPart1}{word}{urlPart2}")
         count = count + 1
-        if count == 5:
-            print("5 urls are generated")
+        if count == 10:
             break
 
 
@@ -101,7 +103,7 @@ def generate_urls(args):
 def generate_password():
     print("Generating random password")
     password = ""
-    for i in range(8):
+    for i in range(20):
         password = password + random.choice(string.ascii_letters + string.digits)
     print(f"your password is: {password}")
     return password

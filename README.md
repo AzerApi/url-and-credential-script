@@ -4,7 +4,7 @@
 
 a url and credentials generation script made with vs code and github copilot
 
-scrambles a word to provide 5 unique urls
+scrambles a word to provide 10  unique urls
 
 
  ## usage
