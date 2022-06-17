@@ -1,16 +1,10 @@
-#! usr/bin/env/python3
-# name: Dev tools py script
-# author: @Azzey
-# date: 2022-06-7
-# version: 1.0
-
-
 import string
 import time
 import os
 import urlConfig as cfg
 import random
 import argparse
+
 
 
 #call parser
@@ -52,7 +46,6 @@ parser.add_argument(
 
 # main function with args passed in
 def main(args):
-
     #if statement tree to call functions based on args passed in 
     if args.url:
         if args.url == " ":
@@ -69,6 +62,7 @@ def main(args):
                 print("please provide a word")
             else:
                 generate_username()
+                new_line()
 
 
 # funtion to generate permutations
@@ -87,37 +81,51 @@ def generate_urls(args):
     urlPart1 = cfg.url["urlPart1"]
     urlPart2 = cfg.url["urlPart2"]
     count = 0
+    date = time.strftime("%Y-%m-%d")
+    Time = time.strftime("%H:%M:%S")
+    dateAndTIme = date + " " + Time
     word = args
-
+    f = open("url.links", "a")
+    f.write(dateAndTIme)
+    f.write("\n")
     list = all_perms(word)
     os.system("clear")
-    print("the following urls have been generated:")
+    
     for word in list:
         print(f"{urlPart1}{word}{urlPart2}")
         count = count + 1
+      
+        f.write(f"{urlPart1}{word}{urlPart2}\n")
         if count == 10:
             break
-
-
+        #open url.links and append to file
+    
 # function to generate a random password
 def generate_password():
-    print("Generating random password")
     password = ""
+    f = open("url.links", "a")
     for i in range(20):
         password = password + random.choice(string.ascii_letters + string.digits)
     print(f"your password is: {password}")
+    f.write(f"your password is: {password}\n")
     return password
-
 
 # function to generate a random username
 def generate_username():
-    print("generating random username")
     username = ""
+    f = open("url.links", "a")
     for i in range(8):
         username = username + random.choice(string.ascii_letters + string.digits)
     print(f"your username is: {username}")
+    f.write(f"your username is: {username}\n")
     return username
 
+
+#append new line function
+def new_line():
+    f = open("url.links", "a")
+    f.write("\n\n")
+    f.close()
 
 # call main function with parsed args passed in
 main(parser.parse_args())
