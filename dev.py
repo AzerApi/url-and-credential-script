@@ -16,7 +16,7 @@ parser.add_argument(
     "--url",
     "-u",
     default="test",
-    help="generate urls",
+    help="generate the urls",
     type=str,
     required=True,
 )
